@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largemouth Bass - Fish of Missouri</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #007acc;
+            color: white;
+            width: 100%;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #666;
+            margin: 5px 0;
+        }
+
+        .header-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header-logo {
+            max-height: 60px;
+            margin-top: 10px;
+        }
+
+        #bass-3d-container {
+            width: 100%;
+            height: calc(100vh - 100px); /* Full height minus header and slider */
+            margin-top: 0;
+            background-color: #e0e0e0; /* Light background to ensure visibility */
+        }
+
+        #rotation-slider {
+            width: 80%;
+            margin: 20px 0;
+        }
+    </style>
+    <!-- Include Three.js -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>Largemouth Bass</h1>
+            <p class="subtitle">Work in Progress</p>
+            <img src="path/to/your-logo.png" alt="Logo" class="header-logo">
+        </div>
+    </header>
+
+    <div id="bass-3d-container"></div>
+
+    <input type="range" id="rotation-slider" min="0" max="360" value="0">
+
+    <script>
+        let model;
+
+        // Set up the scene, camera, and renderer
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.getElementById('bass-3d-container').appendChild(renderer.domElement);
+
+        // Set background color of the renderer
+        renderer.setClearColor(0xe0e0e0); // Light gray background
+
+        // Add lighting to the scene
+        const ambientLight = new THREE.AmbientLight(0xffffff, 1); // Soft white light
+        scene.add(ambientLight);
+
+        const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+        directionalLight.position.set(5, 10, 7.5);
+        scene.add(directionalLight);
+
+        // Load the 3D model
+        const loader = new THREE.GLTFLoader();
+        loader.load('model_67a_-_largemouth_bass.glb', function(gltf) {
+            model = gltf.scene;
+            model.scale.set(10, 10, 10); // Adjust model size if needed
+            scene.add(model);
+
+            // Position the camera
+            camera.position.set(0, 1, 5); // Adjust to ensure the model is in view
+
+            // Animation loop
+            function animate() {
+                requestAnimationFrame(animate);
+                renderer.render(scene, camera);
+            }
+            animate();
+        }, undefined, function(error) {
+            console.error('An error occurred loading the 3D model', error);
+        });
+
+        // Adjust the scene on window resize
+        window.addEventListener('resize', function() {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            renderer.setSize(width, height);
+            camera.aspect = width / height;
+            camera.updateProjectionMatrix();
+        });
+
+        // Slider to control model rotation
+        const slider = document.getElementById('rotation-slider');
+        slider.addEventListener('input', function(event) {
+            const rotationValue = event.target.value;
+            if (model) {
+                model.rotation.y = THREE.Math.degToRad(rotationValue);
+            }
+        });
+    </script>
+
+</body>
+</html>

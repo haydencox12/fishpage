@@ -1,0 +1,137 @@
+[
+    {
+        "name": "Largemouth Bass",
+        "description": "The Largemouth Bass is a popular game fish known for its large mouth that extends past its eyes, making it a favorite among anglers. It thrives in warm, slow-moving waters like lakes, ponds, and reservoirs, where it ambushes prey from cover such as submerged logs and vegetation. Renowned for its aggressive strikes and powerful fight, the Largemouth Bass is a prized catch for sport fishing enthusiasts.",
+        "habitat": "Lakes and ponds",
+        "size": "Up to 20 inches",
+        "image": "Largemouth_Bass.png",
+        "page": "largemouth_bass.html",
+        "category": "Bass"
+    },
+    {
+        "name": "Smallmouth Bass",
+        "description": "The Smallmouth Bass is a highly sought-after game fish recognized for its bronze-colored body and smaller mouth that ends just before the eye. Found in cool, clear, rocky streams and deep reservoirs, this species is known for its agility and fierce fighting ability, making it a favorite among anglers. The Smallmouth Bass is admired for its strong, relentless fight when hooked, offering an exciting challenge for sport fishers",
+        "habitat": "Rivers and lakes",
+        "size": "Up to 18 inches",
+        "image": "Smallmouth_Bass.png",
+        "page": "smallmouth_bass.html",
+        "category": "Bass"
+    },
+    {
+        "name": "Spotted Kentucky Bass",
+        "description": "The Spotted Kentucky Bass, often simply called Spotted Bass, is a game fish that closely resembles the Largemouth Bass but with distinct differences, such as a smaller mouth and dark, horizontal spots along its sides. It prefers warm creeks, rivers, and deep reservoirs with clear water and rocky or gravelly bottoms. Known for its aggressive nature and strong, acrobatic fight, the Spotted Kentucky Bass provides an exhilarating challenge for anglers.",
+        "habitat": "Rivers and lakes",
+        "size": "Up to 18 inches",
+        "image": "Spotted_Bass.png",
+        "page": "smallmouth_bass.html",
+        "category": "Bass"
+    },
+    {
+        "name": "White Bass",
+        "description": "The White Bass is a popular game fish known for its silver, streamlined body with dark horizontal stripes running along its sides. It thrives in large streams, rivers, and reservoirs with moderate flow and sandy or rocky bottoms. White Bass are often found schooling and are known for their strong, fast runs when hooked.",
+        "habitat": "Rivers and lakes",
+        "size": "Up to 18 inches",
+        "image": "white-bass.png",
+        "page": "smallmouth_bass.html",
+        "category": "Bass"
+    },
+    {
+        "name": "Striped Bass",
+        "description": "The Striped Bass is a prized game fish recognized by its sleek, silver body with distinctive horizontal black stripes running from gill to tail. This powerful fish inhabits large deep reservoirs and coastal waters, often migrating between freshwater and saltwater. Known for its size, strength, and vigorous fight when hooked, the Striped Bass is a top target for anglers who enjoy the challenge of reeling in one of these formidable fighters.",
+        "habitat": "Rivers and lakes",
+        "size": "Up to 18 inches",
+        "image": "Striped_Bass.png",
+        "page": "smallmouth_bass.html",
+        "category": "Bass"
+    },
+    {
+        "name": "Hybrid Stripped Bass",
+        "description": "The Hybrid Striped Bass, also known as a Wiper or Whiterock Bass, is a cross between a Striped Bass and a White Bass. It has a stout, muscular body with broken horizontal stripes and combines the best traits of both parent species. Found in large reservoirs and rivers with moderate flow.",
+        "habitat": "Rivers and lakes",
+        "size": "Up to 18 inches",
+        "image": "striped-bass-hybrid.jpg",
+        "page": "smallmouth_bass.html",
+        "category": "Bass"
+    },
+    {
+        "name": "Bluegill",
+        "description": "A small, colorful fish with a dark spot at the base of the dorsal fin.",
+        "habitat": "Freshwater streams and ponds",
+        "size": "Up to 10 inches",
+        "image": "Bluegill.png",
+        "page": "bluegill.html",
+        "category": "Sunfish"
+    },
+    {
+        "name": "Redear Sunfish",
+        "description": "The Redear Sunfish, often referred to as the Shellcracker, is a popular panfish known for its distinct red or orange-edged gill cover. It inhabits warm, slow-moving waters like ponds, lakes, and reservoirs, often around vegetation or submerged structures. The Redear Sunfish gets its nickname from its tendency to feed on snails and other mollusks, using its specialized pharyngeal teeth.",
+        "habitat": "Freshwater streams and ponds",
+        "size": "Up to 10 inches",
+        "image": "redear.png",
+        "page": "bluegill.html",
+        "category": "Sunfish"
+    },
+    {
+        "name": "Green Sunfish",
+        "description": "The Green Sunfish is a hardy and adaptable species of panfish, easily recognized by its greenish body with blue and yellow streaks on its sides and fins. It thrives in a variety of environments, from small streams and ponds to larger rivers and lakes, often in areas with abundant cover like rocks, logs, and vegetation. Although smaller than other sunfish, the Green Sunfish is known for its aggressive nature and strong bite.",
+        "habitat": "Freshwater streams and ponds",
+        "size": "Up to 10 inches",
+        "image": "green.png",
+        "page": "bluegill.html",
+        "category": "Sunfish"
+    },
+    {
+        "name": "Channel",
+        "description": "The Channel Catfish is a widely popular game fish known for its slender, silver-gray body adorned with small black spots. It thrives in a variety of freshwater habitats, including ponds, lakes, rivers, and streams, typically preferring areas with sandy or gravel bottoms. Renowned for its strong sense of smell, the Channel Catfish is often caught using bait with a strong odor.",
+        "habitat": "Rivers and lakes",
+        "size": "Up to 40 inches",
+        "image": "channel.png",
+        "page": "channel_catfish.html",
+        "category": "Catfish"
+    },
+    {
+        "name": "Blue",
+        "description": "The Green Sunfish is a hardy and adaptable species of panfish, easily recognized by its greenish body with blue and yellow streaks on its sides and fins. It thrives in a variety of environments, from small streams and ponds to larger rivers and lakes, often in areas with abundant cover like rocks, logs, and vegetation. Although smaller than other sunfish, the Green Sunfish is known for its aggressive nature and strong bite.",
+        "habitat": "Freshwater streams and ponds",
+        "size": "Up to 10 inches",
+        "image": "blue.png",
+        "page": "bluegill.html",
+        "category": "Catfish"
+    },
+    {
+        "name": "Flathead",
+        "description": "The Flathead Catfish is a large, solitary game fish easily recognized by its broad, flat head and mottled brown or yellow body. It prefers deep, slow-moving rivers and large lakes, often hiding near submerged logs, roots, or other underwater structures. Unlike other catfish species, the Flathead is a voracious predator that primarily feeds on live prey, such as smaller fish.",
+        "habitat": "Rivers and lakes",
+        "size": "Up to 40 inches",
+        "image": "flathead.png",
+        "page": "channel_catfish.html",
+        "category": "Catfish"
+    },
+    {
+        "name": "Black Bullhead",
+        "description": "The Black Bullhead is a resilient and adaptable species of catfish known for its stocky, dark-colored body and rounded tail. It inhabits slow-moving streams, ponds, and backwaters with muddy bottoms, where it thrives in a variety of water conditions, including those with low oxygen levels. The Black Bullhead is primarily nocturnal, feeding on a diverse diet of insects, crustaceans, and plant material.",
+        "habitat": "Rivers and lakes",
+        "size": "Up to 40 inches",
+        "image": "black.png",
+        "page": "channel_catfish.html",
+        "category": "Catfish"
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+]
