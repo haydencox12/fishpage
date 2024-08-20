@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Explore the various fish species found in Missouri. Learn about their habitats, sizes, and more.">
+        <meta name="keywords" content="Fish, Missouri, Wildlife, Fishing, Nature">
+        <title>Fish of Missouri</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Fish of Missouri</h1>
+            <img src="basslogo.png" alt="Logo" class="header-logo">
+            <p class="subtitle">Work in Progress</p>
+        </div>
+        <nav>
+            <ul class="nav-tabs">
+                <li><a href="#fish-list">Fish List</a></li>
+                <li><a href="lake-list.html">Lake List</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <input type="text" id="search-bar" placeholder="Search for a fish...">
+            <span class="or-text">OR</span> <!-- Added "OR" text -->
+        <select id="category-dropdown">
+            <option value="">Select Category</option>
+        </select>
+        <ul id="dropdown-list" class="dropdown"></ul>
+        </nav>
+    </header>
+    <main>
+        <section id="fish-list">
+            <h2>List of Fish</h2>
+            <div id="bass-container" class="category-container">
+                <h3>Bass</h3>
+            </div>
+            <div id="sunfish-container" class="category-container">
+                <h3>Sunfish</h3>
+            </div>
+            <div id="catfish-container" class="category-container">
+                <h3>Catfish</h3>
+            </div>
+            <!-- Add more categories as needed -->
+        </section>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
